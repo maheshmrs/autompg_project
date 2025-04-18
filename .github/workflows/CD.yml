@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Pull Docker Image
         env: 
-          DOCKER_USER: ${{ secrets.DOCKER_USER_NAME }}
+          DOCKER_USER: ${{secrets.DOCKERHUB_USERNAME}}
         run: sudo docker pull $DOCKER_USER/titanic-fastapi:latest
     
       - name: Delete Old Docker Container
@@ -22,6 +22,6 @@ jobs:
     
       - name: Run Docker Container
         env: 
-          DOCKER_USER: ${{ secrets.DOCKER_USER_NAME }}
+          DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
         run: sudo docker run -it -d -p 8001:8001 --name autompg-fastapi-container $DOCKER_USER/autompg-fastapi:latest
 
