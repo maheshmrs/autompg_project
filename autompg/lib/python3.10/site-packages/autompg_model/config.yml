@@ -1,0 +1,49 @@
+# Package Overview
+package_name: autompg_model
+
+# Data Files
+training_data_file: autompg.csv
+
+# Variables
+# The variable we are attempting to predict (mpg)
+target: mpg
+
+pipeline_name: autompg_model
+pipeline_save_file: autompg__model_output_v
+
+# Features that will go inside processing pipeline
+features:
+  - cylinders
+  - displacement
+  - horsepower
+  - weight
+  - acceleration
+  - model_year
+
+
+unused_fields:  # Features to drop before pipeline
+  - origin
+  - car_name
+
+
+# Features names
+cylinders_var: cylinders
+displacement_var: displacement
+horsepower_var: horsepower
+weight_var: weight
+acceleration_var: weight
+model_year_var: weight
+origin_var: origin
+car_name_var: car_name
+
+# Mappings for Ordinal categorical features
+  
+# Set train/test split
+test_size: 0.20
+
+# Set the random seed
+random_state: 42
+
+# Alogrithm parameters
+n_estimators: 100
+max_depth: 10

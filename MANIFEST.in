@@ -1,0 +1,18 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./autompg_model *
+
+include autompg_model/datasets/autompg.csv
+include autompg_model/datasets/test.csv
+include autompg_model/trained_models/*.pkl
+include autompg_model/VERSION
+include autompg_model/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
