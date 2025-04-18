@@ -6,7 +6,6 @@ autompg/
 dist/
 # C extensions
 *.so
-
 Vent/
 # Distribution / packaging
 .Python
