@@ -3,7 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 autompg/
-dist/
 # C extensions
 *.so
 Vent/
@@ -11,7 +10,6 @@ Vent/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
