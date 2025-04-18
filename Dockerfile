@@ -2,10 +2,10 @@
 FROM python:3.10-slim
 
 # copy application files
-ADD /autompg_model_api /autompg_model_api/
+ADD /autompg_api /autompg_api/
 
 # specify working directory
-WORKDIR /autompg_model_api
+WORKDIR /autompg_api
 
 # update pip
 RUN pip install --upgrade pip
