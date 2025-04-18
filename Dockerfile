@@ -9,9 +9,9 @@ WORKDIR /autompg_api
 
 # update pip
 RUN pip install --upgrade pip
-RUN pwd
+RUN ls
 # install dependencies
-RUN pip install -r autompg_api/requirements.txt
+RUN pip install -r requirements.txt
 
 # expose port for application
 EXPOSE 8001
