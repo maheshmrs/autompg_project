@@ -9,7 +9,7 @@ WORKDIR /autompg_api
 
 # update pip
 RUN pip install --upgrade pip
-
+RUN pwd
 # install dependencies
 RUN pip install -r autompg_api/requirements.txt
 
