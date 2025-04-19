@@ -3,7 +3,7 @@ FROM python:3.10-slim
 
 # copy application files
 ADD /autompg_api /autompg_api/
-
+ADD /dist /autompg_api/dist/
 # specify working directory
 WORKDIR /autompg_api
 
